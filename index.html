@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark' || (theme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        }
+      } catch {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.classList.add('dark');
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqil — IT Officer & Technical Support Specialist</title>
+    <meta name="description" content="Professional portfolio of Aqil, IT Officer based in Malaysia specializing in technical support, IT asset tracking, network monitoring, and event Wi-Fi troubleshooting." />
+    <meta property="og:title" content="Aqil — IT Officer & Technical Support Specialist" />
+    <meta property="og:description" content="Professional portfolio of Aqil, IT Officer based in Malaysia specializing in technical support, IT asset tracking, and network monitoring." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

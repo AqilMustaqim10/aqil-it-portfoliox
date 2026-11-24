@@ -1,4 +1,4 @@
-# Portfolio on GitHub Pages
+﻿# Portfolio on GitHub Pages
 
 This is a static React portfolio with a visual editor. Its content is stored in `src/data/portfolio.json` in GitHub. GitHub Actions builds the site after content is saved; visitors do not need a database connection.
 
@@ -17,4 +17,3 @@ Open the published site and add `#admin` to its URL. The editor connects to the 
 Make changes and select Save. The editor commits the content file to the default branch, and the Pages workflow publishes the update after the build completes. If the file changed after you connected, GitHub rejects the save; reconnect to load the current version before editing again. Branch protection may require a different publishing workflow.
 
 Back up your content in GitHub. If you previously saved changes to `data/portfolio.json` using the old local server, that file is not automatically imported; copy those changes into the editor.
-
